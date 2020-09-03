@@ -78,3 +78,7 @@ alert(meuEstado);
 //pode ser usado com o proprio magic number(index), com a posicao do enum
 let textoEnum: string = Estado[Estado.Desabilitado];
 alert("Usando o magic number(index) ->" + textoEnum);
+
+//tipo de dados any(qualquer coisa)
+let v: any =2;
+alert(v);
