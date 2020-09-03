@@ -66,3 +66,15 @@ let campeaoBrasileiro3: [string, number] = ["Palmeiras, 2016"];
 campeaoBrasileiro3[0] = "teste";
 
 alert(campeaoBrasileiro3);
+
+//enums
+//pode ser alterado
+enum Estado {Desabilitado, Habilitado}
+
+let meuEstado: Estado = Estado.Habilitado;
+alert(meuEstado);
+
+//imprimir a string do enum
+//pode ser usado com o proprio magic number(index), com a posicao do enum
+let textoEnum: string = Estado[Estado.Desabilitado];
+alert("Usando o magic number(index) ->" + textoEnum);
