@@ -82,3 +82,10 @@ alert("Usando o magic number(index) ->" + textoEnum);
 //tipo de dados any(qualquer coisa)
 let v: any =2;
 alert(v);
+
+//como o tipo da variavel é any ele deixa chamar qq metodo que exista
+//por exemplo o toExponential que é do number, sem avisar erro de compilação.
+alert(v.toExponential());
+//agora se tentar chamar qq metodo que nao existe, nao ira ter aviso
+//so vai ter erro quando executar
+alert(v.toMetodo());
