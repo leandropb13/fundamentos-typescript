@@ -101,3 +101,16 @@ function funcaoTeste(): void{
 
 var teste: void = funcaoTeste();
 alert(teste);
+
+//existe uma configuração di compilador que é strictNullCheks
+//ele verifica que nao pode mais deixar uma var como null ou undefined
+
+var teste2: number = null;
+alert(teste2);
+
+function somar(a, b){
+    return a + b;
+}
+
+let resultadoSoma = somar("a");
+alert(resultadoSoma);
